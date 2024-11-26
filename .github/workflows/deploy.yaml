@@ -1,0 +1,53 @@
+name: CI/CD for React Portfolio
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    # Checkout le code source
+    - name: Checkout Code
+      uses: actions/checkout@v3
+
+    # Configurer Node.js
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '16'
+
+    # Installer les dépendances et créer le build
+    - name: Install and Build
+      run: |
+        npm install
+        npm run build
+
+    # Builder l'image Docker
+    - name: Build Docker Image
+      run: |
+        docker build -t sarahth/portfolio-srh:latest .
+
+    # Se connecter à DockerHub
+    - name: Login to DockerHub
+      uses: docker/login-action@v2
+      with:
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
+
+    # Pousser l'image vers DockerHub
+    - name: Push Docker Image
+      run: |
+        docker push <your-dockerhub-username>/react-portfolio:latest
+
+    # Déployer sur Kubernetes
+    - name: Deploy to Kubernetes
+      uses: appleboy/ssh-action@v0.1.4
+      with:
+        host: ${{ secrets.KUBE_HOST }}
+        username: ${{ secrets.KUBE_USER }}
+        key: ${{ secrets.KUBE_KEY }}
+        script: |
+          kubectl apply -f deployment.yaml

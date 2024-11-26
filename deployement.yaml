@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: portfolio-srh
+  labels:
+    app: portfolio-srh
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: portfolio-srh
+  template:
+    metadata:
+      labels:
+        app: portfolio-srh
+    spec:
+      containers:
+      - name: portfolio-srh
+        image: docker push sarahth/portfolio-srh:latest
+        ports:
+        - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: portfolio-srh-service
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+    targetPort: 80
+  selector:
+    app: portfolio-srh
