@@ -43,7 +43,7 @@ const Quiz = () => {
   };
 
   return (
-    <div className="quiz-container mx-auto max-w-2xl p-6 bg-gray-100 rounded-lg shadow-lg">
+    <div className="quiz-container mx-auto max-w-2xl p-6 bg-gray-100 rounded-lg shadow-lg" id="quiz">
       {result ? (
         <div className="result-container text-center">
           <h1 className="text-3xl font-bold mb-4">You are most like:</h1>
