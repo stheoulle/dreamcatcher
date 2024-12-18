@@ -2,7 +2,7 @@
 FROM nginx:alpine
 
 #Copier les fichiers de build dans le dossier par défaut de Nginx
-COPY build/ /usr/share/nginx/html
+COPY dist/ /usr/share/nginx/html
 
 #Exposer le port 80 pour le service
 EXPOSE 80

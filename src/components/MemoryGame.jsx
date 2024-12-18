@@ -9,14 +9,14 @@ import Button from "@mui/material/Button";
 import "./memorygame.scss";
 
 const uniqueCardsArray = [
-  { type: "Dami", image: "../../images/dami.jpg" },
-  { type: "Gahyun", image: "../../images/gahyun.jpg" },
-  { type: "Handong", image: "../../images/handong.jpg" },
-  { type: "Jiu", image: "../../images/jiu.jpg" },
-  { type: "Siyeon", image: "../../images/siyeon.jpg" },
-  { type: "Sua", image: "../../images/sua.jpg" },
-  { type: "Yoohyeon", image: "../../images/yoohyeon.jpg" },
-  { type: "Logo", image: "../../images/logo.png" },
+  { type: "Dami", image: "/images/dami.jpg" },
+  { type: "Gahyun", image: "/images/gahyun.jpg" },
+  { type: "Handong", image: "/images/handong.jpg" },
+  { type: "Jiu", image: "/images/jiu.jpg" },
+  { type: "Siyeon", image: "/images/siyeon.jpg" },
+  { type: "Sua", image: "/images/sua.jpg" },
+  { type: "Yoohyeon", image: "/images/yoohyeon.jpg" },
+  { type: "Logo", image: "/images/logo.png" },
 ];
 
 function shuffleCards(array) {

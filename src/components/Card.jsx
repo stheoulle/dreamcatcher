@@ -1,5 +1,5 @@
 import classnames from "classnames";
-import pokeball from "../../public/images/insomnia.png";
+import pokeball from "/images/insomnia.png";
 import "./card.scss";
 
 import PropTypes from 'prop-types';
