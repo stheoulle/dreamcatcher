@@ -153,6 +153,7 @@ export default function App() {
           <Button
             onClick={handleRestart}
             variant="contained"
+            color="success"
           >
             Restart
           </Button>
@@ -176,7 +177,7 @@ export default function App() {
           </DialogContentText>
         </DialogContent>
         <DialogActions>
-          <Button onClick={handleRestart} className="bg-yellow-700" >
+          <Button onClick={handleRestart} className="bg-yellow-700"  >
             Restart
           </Button>
         </DialogActions>

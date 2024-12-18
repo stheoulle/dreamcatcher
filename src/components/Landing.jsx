@@ -5,7 +5,7 @@ const Landing = () => {
       style={{ backgroundImage: "url('/images/home.webp')" }}
       id="landing"
     >
-      <h1 className="text-4xl md:text-6xl font-bold mb-6">
+      <h1 className="text-4xl md:text-6xl font-bold mb-6 drop-shadow-[0_0px_4px_rgba(255,255,255,255)]">
         Welcome to Dreamcatcher&apos;s Universe!
       </h1>
       <button
