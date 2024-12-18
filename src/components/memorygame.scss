@@ -1,0 +1,70 @@
+.bold {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.App {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header > div {
+    font-size: 24px; /* Increased font size */
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+footer {
+    width: 80%; /* Increase width */
+    position: relative;
+    margin: 0 auto;
+    padding: 20px 10px; /* Increased padding */
+    margin-top: 20px;
+}
+
+footer .score {
+    justify-content: center;
+    display: flex;
+}
+
+footer .score div {
+    padding: 12px;
+}
+
+footer .restart {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.container {
+    border: 1px solid #DEDEDE;
+    padding: 20px; /* Increased padding */
+    margin-bottom: 30px;
+    box-shadow: 0 0 8px 4px #DEDEDE;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    justify-items: center;
+    align-items: stretch;
+    gap: 1.5rem; /* Increased gap */
+    margin: 0 auto;
+    width: 80%; /* Use a percentage of screen width */
+    max-width: 960px; /* Increased max-width */
+    height: 850px; /* Adjust height to match increased card size */
+    perspective: 100%;
+}

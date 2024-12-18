@@ -18,7 +18,7 @@ import Header from "./components/Header";
 import Landing from "./components/Landing";
 import Quiz from "./components/Quiz";
 import Gallery from "./components/Gallery";
-import Footer from "./components/Footer";
+import MemoryGame from "./components/MemoryGame";
 
 const App = () => {
   return (
@@ -28,8 +28,9 @@ const App = () => {
         <Landing />
         <Quiz />
         <Gallery />
+        <MemoryGame />
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </ReactLenis>
   );
 };

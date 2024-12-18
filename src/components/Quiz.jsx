@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import questions from "../logic/questions";
 
 const Quiz = () => {
