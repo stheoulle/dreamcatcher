@@ -116,7 +116,7 @@ export default function App() {
   };
 
   return (
-    <div className="App">
+    <div className="App" id="memory">
       <header>
         <h3>Play the Flip card game</h3>
         <div>
@@ -150,10 +150,21 @@ export default function App() {
           )}
         </div>
         <div className="restart">
-          <Button onClick={handleRestart} color="primary" variant="contained">
+          <Button
+            onClick={handleRestart}
+            variant="contained"
+            sx={{
+              bgcolor: 'yellow.700', // Background color for the button
+              color: 'white', // Text color (optional for better contrast)
+              '&:hover': {
+                bgcolor: 'yellow.800', // Darker shade on hover
+              },
+            }}
+          >
             Restart
           </Button>
         </div>
+
       </footer>
       <Dialog
         open={showModal}
@@ -172,7 +183,7 @@ export default function App() {
           </DialogContentText>
         </DialogContent>
         <DialogActions>
-          <Button onClick={handleRestart} color="primary">
+          <Button onClick={handleRestart} >
             Restart
           </Button>
         </DialogActions>

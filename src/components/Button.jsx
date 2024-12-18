@@ -26,7 +26,7 @@ const ButtonPrimary = ({
       <a
         href={href}
         target={target}
-        className={"btn btn-primary " + classes}
+        className={"btn bg-yellow-700 " + classes}
       >
         {label}
 
@@ -40,7 +40,7 @@ const ButtonPrimary = ({
     )
   } else {
     return (
-      <button className={"btn btn-primary " + classes}>
+      <button className={"btn bg-yellow-700 " + classes}>
         {label}
 
         {icon ?

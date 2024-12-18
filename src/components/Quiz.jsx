@@ -43,14 +43,14 @@ const Quiz = () => {
   };
 
   return (
-    <div className="quiz-container mx-auto max-w-2xl p-6 bg-gray-100 rounded-lg shadow-lg" id="quiz">
+    <div className="quiz-container mx-auto max-w-2xl p-6 bg-gray-100 rounded-lg shadow-lg mb-20" id="quiz">
       {result ? (
         <div className="result-container text-center">
           <h1 className="text-3xl font-bold mb-4">You are most like:</h1>
           <p className="text-xl text-purple-600 font-semibold">{result}</p>
           <button
             onClick={resetQuiz}
-            className="mt-6 py-2 px-4 bg-blue-500 text-black font-semibold rounded-lg shadow hover:bg-blue-600 transition"
+            className="mt-6 py-2 px-4 bg-yellow-700 text-black font-semibold rounded-lg shadow hover:bg-yellow-700 transition"
           >
             Restart Quiz
           </button>
@@ -66,7 +66,7 @@ const Quiz = () => {
               <button
                 key={index}
                 onClick={() => handleAnswer(option.member)}
-                className="py-2 px-4 bg-blue-500 text-white font-medium rounded-lg shadow hover:bg-blue-600 transition"
+                className="py-2 px-4 bg-yellow-700 text-white font-medium rounded-lg shadow hover:bg-yellow-700 transition"
               >
                 {option.text}
               </button>

@@ -1,8 +1,19 @@
 const Gallery = () => {
     const images = [
-      { src: "/images/dreamcatcher1.jpg", title: "Album 1" },
-      { src: "/images/dreamcatcher2.jpg", title: "Album 2" },
-      { src: "/images/dreamcatcher3.jpg", title: "Album 3" },
+      { src: "public/images/group.png", title: "Group picture Virtous" },
+      { src: "public/images/oe.jpg", title: "Odd eye group picture" },
+
+      { src: "public/images/gah.jpg", title: "Gahyun Justice comeback" },
+      { src: "public/images/siy.png", title: "Album 3" },
+      { src: "public/images/center.png", title: "versus logo" },
+      { src: "public/images/bv.jpg", title: "Bon voyage group picture" },
+      { src: "public/images/yoo.jpg", title: "Yoohyeon" },
+      { src: "public/images/last.jpg", title: "Justice group picture" },
+      { src: "public/images/wistle.webp", title: "Wistle group picture" },
+      
+
+
+
     ];
   
     return (
@@ -17,7 +28,7 @@ const Gallery = () => {
               <img
                 src={img.src}
                 alt={img.title}
-                className="w-full h-60 object-cover transform hover:scale-105 transition-transform"
+                className="w-full h-70 object-cover transform hover:scale-105 transition-transform"
               />
               <p className="mt-2 text-lg font-medium">{img.title}</p>
             </div>

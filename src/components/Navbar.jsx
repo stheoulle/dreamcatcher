@@ -43,7 +43,12 @@ const Navbar = ({ navOpen }) => {
       label: 'Gallery',
       link: '#gallery',
       className: 'nav-link'
-    }
+    },
+    {
+      label: 'Memory Game',
+      link: '#memory',
+      className: 'nav-link'
+    },
   ];
 
   return (
