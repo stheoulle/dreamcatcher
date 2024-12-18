@@ -153,13 +153,6 @@ export default function App() {
           <Button
             onClick={handleRestart}
             variant="contained"
-            sx={{
-              bgcolor: 'yellow.700', // Background color for the button
-              color: 'white', // Text color (optional for better contrast)
-              '&:hover': {
-                bgcolor: 'yellow.800', // Darker shade on hover
-              },
-            }}
           >
             Restart
           </Button>
@@ -183,7 +176,7 @@ export default function App() {
           </DialogContentText>
         </DialogContent>
         <DialogActions>
-          <Button onClick={handleRestart} >
+          <Button onClick={handleRestart} className="bg-yellow-700" >
             Restart
           </Button>
         </DialogActions>

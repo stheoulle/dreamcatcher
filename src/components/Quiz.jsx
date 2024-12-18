@@ -43,10 +43,16 @@ const Quiz = () => {
   };
 
   return (
-    <div className="quiz-container mx-auto max-w-2xl p-6 bg-gray-100 rounded-lg shadow-lg mb-20" id="quiz">
+    <div className="quiz-container mx-auto max-w-2xl p-6 bg-gray-100 rounded-lg shadow-lg mb-20 mt-20" id="quiz" >
+      <div>
+        <h1 className="text-4xl font-bold mb-4 text-center text-black">Which Dreamcatcher Member Are You?</h1>
+        <p className="text-lg text-center text-black">
+          Answer a few questions to find out which Dreamcatcher member you are !
+        </p>
+      </div>
       {result ? (
         <div className="result-container text-center">
-          <h1 className="text-3xl font-bold mb-4">You are most like:</h1>
+          <h1 className="text-3xl font-bold mb-4 text-black mt-10">You are most like:</h1>
           <p className="text-xl text-purple-600 font-semibold">{result}</p>
           <button
             onClick={resetQuiz}
