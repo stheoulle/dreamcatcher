@@ -1,18 +1,21 @@
 const Landing = () => {
-    return (
-      <section className="h-screen bg-cover bg-center flex flex-col justify-center items-center text-center text-white" style={{ backgroundImage: "url('/images/dreamcatcher-bg.jpg')" }} id="landing">
-        <h1 className="text-4xl md:text-6xl font-bold mb-6">
-          Welcome in Dreamcatcher's universe !
-        </h1>
-        <button
-          onClick={() => window.scrollTo({ top: 600, behavior: "smooth" })}
-          className="px-6 py-3 bg-purple-700 hover:bg-purple-600 text-white rounded-lg shadow-lg transition-all"
-        >
-          Explore the site
-        </button>
-      </section>
-    );
-  };
-  
-  export default Landing;
-  
+  return (
+    <section
+      className="h-screen bg-cover bg-center flex flex-col justify-center items-center text-center text-yellow-700"
+      style={{ backgroundImage: "url('/images/home.webp')" }}
+      id="landing"
+    >
+      <h1 className="text-4xl md:text-6xl font-bold mb-6">
+        Welcome to Dreamcatcher&apos;s Universe!
+      </h1>
+      <button
+        onClick={() => window.scrollTo({ top: 600, behavior: "smooth" })}
+        className="px-6 py-3 bg-yellow-700 hover:bg-yellow-700 text-white rounded-lg shadow-lg transition-all"
+      >
+        Explore the Site
+      </button>
+    </section>
+  );
+};
+
+export default Landing;
