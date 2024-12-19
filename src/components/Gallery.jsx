@@ -23,12 +23,12 @@ const Gallery = () => {
           {images.map((img, index) => (
             <div
               key={index}
-              className="gallery-item overflow-hidden rounded-lg shadow-lg"
+              className="gallery-item overflow-hidden rounded-lg shadow-lg flex "
             >
               <img
                 src={img.src}
                 alt={img.title}
-                className="w-full h-70 object-cover transform hover:scale-105 transition-transform"
+                className="w-100 h-100 object-cover transform hover:scale-105 transition-transform "
               />
               <p className="mt-2 text-lg font-medium">{img.title}</p>
             </div>
